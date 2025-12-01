@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMINEX</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* GLOBAL */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #003d3d, #008080);
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(6px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    nav .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 400;
+    }
+
+    nav ul li a:hover {
+      color: #00e6e6;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    /* ABOUT SECTION */
+    .section {
+      padding: 100px 50px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* PORTFOLIO SECTION */
+    .portfolio-item {
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+    }
+
+    /* CONTACT SECTION */
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      background: #00cccc;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #00e6e6;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">LUMINEX</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#login">Login/Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <img src="https://i.imgur.com/3eZ8J1z.png" alt="Profile Image"/>
+      <h1>Welcome to LUMINEX</h1>
+      <p>Your modern, clean and smooth green–teal themed portfolio website.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Meerab Javaid — a computer science student passionate about creative digital projects including Scratch games, logos, posters, and AI vs Human designs.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="portfolio-item">
+      <p><strong>My Projects:</strong> Scratch Games, Canvas Posters, AI vs Human Concepts, and the brand logo for my bakery business “Treatsy”.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- LOGIN/SIGNUP -->
+  <section class="section" id="login">
+    <h2>Login / Signup</h2>
+
+    <form>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button type="submit">Login</button>
+      <button type="submit" style="background:#009999;">Signup</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 LUMINEX — All Rights Reserved.
+  </footer>
+
+</body>
+</html>
